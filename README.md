@@ -1,4 +1,4 @@
-#  netra.ai — Tumor-Type-Conditioned Multi-Task Brain MRI Segmentation
+#  Netra — Tumor-Type-Conditioned Multi-Task Brain MRI Segmentation
 
 **Joint tumor classification + FiLM-conditioned segmentation, with counterfactual mask explanations.**
 
