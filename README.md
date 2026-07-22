@@ -6,29 +6,6 @@ netra.ai is a multi-task deep learning pipeline that takes a single brain MRI sl
 
 >  **Research preview — not a diagnostic tool.** This project is a technical exploration of multi-task conditioning in medical imaging, not a certified or clinically validated system.
 
----
-
-## Table of Contents
-
-- [Why This Project Exists](#why-this-project-exists)
-- [Key Ideas](#key-ideas)
-- [System Architecture](#system-architecture)
-- [How It Works — End to End](#how-it-works--end-to-end)
-- [Dataset](#dataset)
-- [Model Details](#model-details)
-- [Training](#training)
-- [Evaluation & Ablation Study](#evaluation--ablation-study)
-- [Explainability](#explainability)
-- [Automated Reporting](#automated-reporting)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Limitations](#limitations)
-- [Roadmap](#roadmap)
-- [License](#license)
-
----
 
 ## Why This Project Exists
 
@@ -154,21 +131,6 @@ For every test slice, the pipeline generates a row containing:
 
 These are aggregated into a per-patient summary CSV as well as a per-slice CSV.
 
-## Project Structure
-
-```
-netra-ai/
-├── data/                          # raw / cached dataset (not committed)
-├── checkpoints/                   # saved model weights + training history
-├── figures/                       # Grad-CAM, saliency, counterfactual plots
-├── reports/
-│   ├── slice_level_report.csv
-│   └── patient_summary_report.csv
-├── notebooks/
-│   └── brain-mri-multitask-film-segmentation.ipynb
-├── requirements.txt
-└── README.md
-```
 
 ## Installation
 
