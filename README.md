@@ -225,12 +225,6 @@ The notebook is organized so each section runs independently after setup:
 - Pixel-to-mm² spacing is an approximation unless refined with real DICOM metadata.
 - No clinical validation. **Not for diagnostic use.**
 
-## Roadmap
-
-- [ ] 3D/volumetric extension across slice stacks
-- [ ] External validation on additional datasets
-- [ ] ONNX export for lightweight inference
-- [ ] Web front-end for interactive scan review
 
 ## License
 
