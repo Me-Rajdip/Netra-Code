@@ -2,7 +2,7 @@
 
 **Joint tumor classification + FiLM-conditioned segmentation, with counterfactual mask explanations.**
 
-netra.ai is a multi-task deep learning pipeline that takes a single brain MRI slice and, in one forward pass, predicts **what type of tumor is present** and **exactly where it is**, using the classification result itself to actively reshape the segmentation output. It also ships with built-in explainability tools and an automated per-patient reporting system that flags cases worth a second look.
+Netra is a multi-task deep learning pipeline that takes a single brain MRI slice and, in one forward pass, predicts **what type of tumor is present** and **exactly where it is**, using the classification result itself to actively reshape the segmentation output. It also ships with built-in explainability tools and an automated per-patient reporting system that flags cases worth a second look.
 
 >  **Research preview — not a diagnostic tool.** This project is a technical exploration of multi-task conditioning in medical imaging, not a certified or clinically validated system.
 
