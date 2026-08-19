@@ -35,13 +35,13 @@ Most segmentation pipelines treat "what is this tumor" and "where is this tumor"
                                       │
                      ┌────────────────┴────────────────┐
                      │                                 │
-        ┌────────────▼────────────┐      ┌─────────────▼─────────────┐
-        │  Classification Head     │      │   FiLM-Conditioned         │
-        │  GAP → FC(64) → FC(3)    │      │   Segmentation Decoder     │
-        │  → tumor type + embedding│──┐   │   dec4→dec3→dec2→dec1     │
-        └────────────┬─────────────┘  │   │  (skip connections from   │
+        ┌────────────▼────────────┐      ┌─────────────▼────────────────|
+        │  Classification Head     │      │   FiLM-Conditioned          │
+        │  GAP → FC(64) → FC(3)    │      │   Segmentation Decoder      │
+        │  → tumor type + embedding│──┐   │   dec4→dec3→dec2→dec1       │
+        └────────────┬─────────────┘  │   │  (skip connections from     │
                      │                └──▶│   encoder, gamma/beta      │
-                     │  embedding (64-d)   │   modulation per stage)   │
+                     │  embedding (64-d)   │   modulation per stage)    │
                      │  drives FiLM  ─────▶└─────────────┬─────────────┘
                      │                                    │
         ┌────────────▼────────────┐         ┌─────────────▼─────────────┐
